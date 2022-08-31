@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Category } from "../../utils/Interfaces";
 
+//Interfaces/types
 export interface Player {
   name: String;
   completed: Array<Category>;
@@ -11,11 +12,19 @@ export interface PlayerState {
   currentPlayer: number;
 }
 
+//Variables
 const initialState: PlayerState = {
   players: [
     {
       name: "Bobby",
-      completed: [Category.html],
+      completed: [
+        Category.html,
+        Category.css,
+        Category.framework,
+        Category.javascript,
+        Category.backend,
+        Category.history,
+      ],
     },
     {
       name: "Billy",
@@ -25,6 +34,7 @@ const initialState: PlayerState = {
   currentPlayer: 0,
 };
 
+//Helper functions
 function calcNextPlayer(arr: Array<Player>, num: number): number {
   if (num >= arr.length) {
     return 0;
@@ -33,6 +43,7 @@ function calcNextPlayer(arr: Array<Player>, num: number): number {
   return result;
 }
 
+// Slice
 const playerSlice = createSlice({
   name: "players",
   initialState,
@@ -73,6 +84,7 @@ const playerSlice = createSlice({
   },
 });
 
+//Exports
 export const { addPlayer, deletePlayer, addScore, advanceGame } =
   playerSlice.actions;
 export default playerSlice.reducer;

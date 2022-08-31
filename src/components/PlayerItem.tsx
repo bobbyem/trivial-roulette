@@ -1,6 +1,5 @@
-import React from "react";
 import { useDispatch } from "react-redux";
-import { deletePlayer } from "../features/Slices/PlayerSlice";
+import { deletePlayer } from "../features/slices/PlayerSlice";
 
 type props = {
   index: number;

@@ -35,6 +35,13 @@ a {
   flex-direction: column;
 }
 
+/* Geometry */
+
+.circle {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
 /* Display */
 
 .flex-column {
@@ -85,6 +92,26 @@ a {
 
 .w-full {
   width: 100%;
+}
+
+.w-1r {
+  width: 1rem;
+  max-width: 1rem;
+}
+
+.w-2r {
+  width: 2rem;
+  max-width: 2rem;
+}
+
+.w-4r {
+  width: 4rem;
+  max-width: 4rem;
+}
+
+.w-6r {
+  width: 6rem;
+  max-width: 6rem;
 }
 
 .w-100 {
@@ -233,6 +260,44 @@ a {
 
 .p-4 {
   padding: 4rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pl-4 {
+  padding-left: 4rem;
+}
+
+.pl-6 {
+  padding-left: 4rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pr-4 {
+  padding-right: 4rem;
+}
+
+.pr-6 {
+  padding-right: 4rem;
+}
+
+/* Flex-Gap */
+
+.gap-1 {
+  gap: 1rem;
 }
 
 /* Button  */

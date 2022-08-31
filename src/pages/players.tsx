@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import PlayerItem from "../components/PlayerItem";
-import { addPlayer } from "../features/Slices/PlayerSlice";
+import { addPlayer } from "../features/slices/PlayerSlice";
 import { RootState } from "../features/store";
 
-function playerspage() {
-  const { players } = useSelector((state: RootState) => state.playerReducer);
+function Players() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { players } = useSelector((state: RootState) => state.playerReducer);
   const [name, setName] = useState("");
 
   const handleAdd = (): void => {
@@ -27,7 +29,8 @@ function playerspage() {
     if (players.length === 0) {
       return alert("Can't play with zero players");
     }
-    window.location.href = "/gamepage";
+    //If valid - nav to game
+    navigate("/game");
   };
 
   return (
@@ -66,4 +69,4 @@ function playerspage() {
   );
 }
 
-export default playerspage;
+export default Players;

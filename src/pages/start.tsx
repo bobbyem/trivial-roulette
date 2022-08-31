@@ -1,4 +1,8 @@
-function startingpage() {
+import { useNavigate } from "react-router-dom";
+
+function Start() {
+  const navigate = useNavigate();
+
   return (
     <div className="page align-items-center justify-content-center">
       <h1>Wellcome!</h1>
@@ -29,7 +33,7 @@ function startingpage() {
       <button
         className="text-l m-top-2 p-1 bg-acc1"
         onClick={() => {
-          window.location.href = "/playerspage";
+          navigate("/players");
         }}
       >
         Play The Game
@@ -38,4 +42,4 @@ function startingpage() {
   );
 }
 
-export default startingpage;
+export default Start;
