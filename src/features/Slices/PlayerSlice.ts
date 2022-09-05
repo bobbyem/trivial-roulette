@@ -14,23 +14,7 @@ export interface PlayerState {
 
 //Variables
 const initialState: PlayerState = {
-  players: [
-    {
-      name: "Bobby",
-      completed: [
-        Category.html,
-        Category.css,
-        Category.framework,
-        Category.javascript,
-        Category.backend,
-        Category.history,
-      ],
-    },
-    {
-      name: "Billy",
-      completed: [Category.history],
-    },
-  ],
+  players: [],
   currentPlayer: 0,
 };
 
@@ -59,7 +43,7 @@ const playerSlice = createSlice({
       newState.players = newPlayers;
       return newState;
     },
-    addScore(state, action: PayloadAction<Category>) {
+    addScore(state, action: PayloadAction<number>) {
       const newArr = [...state.players];
       const index = state.currentPlayer;
       const player = newArr[index];

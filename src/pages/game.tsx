@@ -1,7 +1,10 @@
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import ScoreDisplay from "../components/ScoreDisplay";
+import Wheel from "../components/Wheel";
+import { getQuestions } from "../features/slices/QuestionSlice";
 import { RootState } from "../features/store";
 
 function Game() {
@@ -9,6 +12,7 @@ function Game() {
     (state: RootState) => state.playerReducer
   );
   const navigate = useNavigate();
+  const dispatch = useDispatch<any>();
 
   useEffect(() => {
     if (players.length < 1) {
@@ -17,10 +21,18 @@ function Game() {
   }, [players]);
 
   return (
-    <div className="page align-items-center justify-content-between">
+    <div className="page align-items-center justify-content-between fade-in">
       <ScoreDisplay players={players} />
       <h2>It's {players ? players[currentPlayer].name : null}s turn</h2>
-      <button className="m-top-1 m-bottom-1 p-1 w-300 bg-acc1">Spin</button>
+      <Wheel />
+      <button
+        className="m-top-1 text-l m-bottom-1 p-1 w-300 bg-acc1"
+        onClick={() => {
+          dispatch(getQuestions());
+        }}
+      >
+        Spin
+      </button>
     </div>
   );
 }

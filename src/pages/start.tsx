@@ -4,7 +4,7 @@ function Start() {
   const navigate = useNavigate();
 
   return (
-    <div className="page align-items-center justify-content-center">
+    <div className="page align-items-center justify-content-center fade-in">
       <h1>Wellcome!</h1>
       <div className="w-300">
         <p className="text-center">

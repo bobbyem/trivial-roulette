@@ -6,6 +6,7 @@
   --framework: #ffca3a;
   --backend: #6a4c93;
   --history: #f8ff13;
+  --dark: rgb(14, 14, 19);
 }
 html,
 body {
@@ -196,6 +197,10 @@ a {
 
 /* Margin */
 
+.m-0 {
+  margin: 0;
+}
+
 .m-1 {
   margin: 1rem;
 }
@@ -294,6 +299,10 @@ a {
   padding-right: 4rem;
 }
 
+.p-top-1 {
+  padding-top: 1rem;
+}
+
 /* Flex-Gap */
 
 .gap-1 {
@@ -344,6 +353,14 @@ button:active {
 
 .text-center {
   text-align: center;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 /* Overflow */
@@ -406,6 +423,7 @@ ul {
 
 .history {
   background-color: var(--history);
+  color: var(--html);
 }
 
 .framework {
@@ -414,6 +432,119 @@ ul {
 
 .backend {
   background-color: var(--backend);
+}
+
+/* Animation */
+/* Animation classes */
+/* WheelAnimations */
+.html-spin {
+  animation: html 5 0.5s linear forwards;
+}
+
+.history-spin {
+  animation: history 5 0.5s linear forwards;
+}
+
+.css-spin {
+  animation: css 5 0.5s linear forwards;
+}
+
+.javascript-spin {
+  animation: javascript 5 0.5s linear forwards;
+}
+
+.js-spin {
+  animation: javascript 5 0.5s linear forwards;
+}
+
+.backend-spin {
+  animation: backend 5 0.5s linear forwards;
+}
+
+.framework-spin {
+  animation: framework 5 0.5s linear forwards;
+}
+
+.pulse {
+  animation: pulse 0.5s infinite alternate;
+}
+
+.fade-in {
+  animation: fade 0.5s 1 forwards;
+}
+
+/* Keyframes */
+
+@keyframes html {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes framework {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(420deg);
+  }
+}
+
+@keyframes backend {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+
+@keyframes javascript {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+
+@keyframes css {
+  from {
+    transform: rotate(240deg);
+  }
+  to {
+    transform: rotate(600deg);
+  }
+}
+
+@keyframes history {
+  from {
+    transform: rotate(300deg);
+  }
+  to {
+    transform: rotate(660deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Queries */
@@ -425,5 +556,11 @@ ul {
   body {
     color: white;
     background: rgb(0, 1, 11);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 12px;
   }
 }

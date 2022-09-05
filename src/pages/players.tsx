@@ -34,7 +34,7 @@ function Players() {
   };
 
   return (
-    <div className="page align-items-center justify-content-between">
+    <div className="page align-items-center justify-content-between fade-in">
       <h2>Players</h2>
       <ul className="scroll w-300 list-style-none b-1 flex-column p-1 h-400 b-round">
         {players

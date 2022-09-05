@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const URL = "localhost:3000/api";
-const URL = process.env.API_URL;
+const URL = process.env.REACT_APP_API_URL;
 
 //Function for randomizing response data
 const randomize = async (arr: Array<any>) => {

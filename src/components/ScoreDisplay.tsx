@@ -7,9 +7,11 @@ type props = {
 function ScoreDisplay(props: props) {
   const { players } = props;
   return (
-    <ul className="p-1 scroll gap-1 w-full flex-column direction-column ol-1">
+    <ul className="scroll w-300 gap-1 w-full flex-column direction-column ol-1 p-top-1 b-round">
       {players
-        ? players.map((player, index) => <ScoreItem player={player} />)
+        ? players.map((player, index) => (
+            <ScoreItem key={index} player={player} />
+          ))
         : null}
     </ul>
   );
