@@ -8,7 +8,7 @@ import Answer from "./pages/answer";
 
 function App() {
   return (
-    <div>
+    <div className="page app">
       <Router>
         <Routes>
           <Route path="/" element={<Start />} />

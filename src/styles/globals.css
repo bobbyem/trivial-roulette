@@ -16,6 +16,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   max-width: 100vw;
   max-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -33,7 +37,14 @@ a {
   height: 100vh;
   width: 100vw;
   display: flex;
+  max-width: 500px;
+  max-height: 900px;
   flex-direction: column;
+}
+
+.app {
+  border: 1px solid;
+  border-radius: 0.5rem;
 }
 
 /* Geometry */
@@ -367,6 +378,12 @@ button:active {
 
 .scroll {
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 /* Lists */
@@ -467,6 +484,7 @@ ul {
 
 .pulse {
   animation: pulse 0.5s infinite alternate;
+  animation-delay: 2.5s;
 }
 
 .fade-in {
@@ -559,8 +577,12 @@ ul {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   body {
     font-size: 12px;
+  }
+  .app {
+    border: none;
+    border-radius: 0.5rem;
   }
 }
