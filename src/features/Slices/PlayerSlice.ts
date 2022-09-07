@@ -65,10 +65,18 @@ const playerSlice = createSlice({
           ? 0
           : state.currentPlayer + 1;
     },
+    resetPlayerState() {
+      return initialState;
+    },
   },
 });
 
 //Exports
-export const { addPlayer, deletePlayer, addScore, advanceGame } =
-  playerSlice.actions;
+export const {
+  addPlayer,
+  deletePlayer,
+  addScore,
+  advanceGame,
+  resetPlayerState,
+} = playerSlice.actions;
 export default playerSlice.reducer;

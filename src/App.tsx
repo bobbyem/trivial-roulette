@@ -5,6 +5,7 @@ import Players from "./pages/players";
 import Game from "./pages/game";
 import Question from "./pages/question";
 import Answer from "./pages/answer";
+import WinnerModal from "./components/WinnerModal";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/answer" element={<Answer />} />
         </Routes>
       </Router>
+      <WinnerModal />
     </div>
   );
 }

@@ -86,6 +86,9 @@ const questionSlice = createSlice({
     resetFetchStatus: (state, action) => {
       state.fetchStatus = "IDLE";
     },
+    resetQuestionState: () => {
+      return initialState;
+    },
   },
   extraReducers(builder) {
     builder
@@ -112,5 +115,6 @@ const questionSlice = createSlice({
   },
 });
 
-export const { addUsed, resetFetchStatus } = questionSlice.actions;
+export const { addUsed, resetFetchStatus, resetQuestionState } =
+  questionSlice.actions;
 export default questionSlice.reducer;
