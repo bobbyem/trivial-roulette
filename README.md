@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+# Trivial Roulette
+Is a project I made during my education at NBI, a side project to get more experience using the MERN-stack by developing something useful and fun. The game works like “Trivial Pursuit” players answer questions from different categories that are drawn at random. The best way is to play the game on a phone and passing it around during the game. You can also play it on your own to test your knowledge, as a flash card game. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app comes with a companion portal where other developers can register questions.
 
-## Available Scripts
+https://trival-roulette.web.app/
 
-In the project directory, you can run:
+https://trivialwebapi.herokuapp.com/
 
-### `npm start`
+<img src="https://github.com/bobbyem/trivial-roulette/assets/55324921/467143d1-c975-4c99-95e5-b02bcbd98536" width="25%"/>
+<img src="https://github.com/bobbyem/trivial-roulette/assets/55324921/597898b9-90cd-4395-ac69-8a3cb0f34c5e" width="25%"/>
+<img src="https://github.com/bobbyem/trivial-roulette/assets/55324921/22e3423e-2bba-4476-9306-04ea37d57851" width="25%"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
