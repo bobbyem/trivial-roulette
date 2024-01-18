@@ -5,7 +5,7 @@ function Start() {
 
   return (
     <div className="page align-items-center justify-content-center fade-in">
-      <h1>Wellcome!</h1>
+      <h1>Welcome!</h1>
       <div className="w-300">
         <p className="text-center">
           Trivial Roulette is trivia game for web developers. Think of it as a
