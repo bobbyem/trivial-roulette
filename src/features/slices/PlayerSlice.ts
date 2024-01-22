@@ -18,15 +18,6 @@ const initialState: PlayerState = {
   currentPlayer: 0,
 };
 
-//Helper functions
-function calcNextPlayer(arr: Array<Player>, num: number): number {
-  if (num >= arr.length) {
-    return 0;
-  }
-  const result = arr.length + 1;
-  return result;
-}
-
 // Slice
 const playerSlice = createSlice({
   name: "players",

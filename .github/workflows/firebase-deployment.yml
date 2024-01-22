@@ -26,6 +26,7 @@ jobs:
 
       - name: Deploy to Firebase Hosting
         run: |
+          REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
           npm install -g firebase-tools
           firebase deploy --token "$FIREBASE_TOKEN"
         env:

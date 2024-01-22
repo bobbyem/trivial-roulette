@@ -536,6 +536,10 @@ ul {
   animation: grow 0.5s forwards;
 }
 
+.spin-periodical {
+  animation: spinPeriodical infinite 4s 3s forwards;
+}
+
 /* Keyframes */
 
 @keyframes html {
@@ -616,6 +620,21 @@ ul {
   }
   to {
     transform: scale(100%);
+  }
+}
+
+@keyframes spinPeriodical {
+  0% {
+    transform: rotate(-360deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
