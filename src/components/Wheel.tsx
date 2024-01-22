@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../features/store";
-import { Player } from "../features/slicesTemp/PlayerSlice";
+import { Player } from "../features/slices/PlayerSlice";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { setGameRunning } from "../features/slicesTemp/AppState";
+import { setGameRunning } from "../features/slices/AppState";
 import { Category } from "../utils/Interfaces";
 
 function Wheel() {

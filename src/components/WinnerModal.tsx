@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import { useSelector } from "react-redux";
 import { RootState } from "../features/store";
-import { Player, resetPlayerState } from "../features/slicesTemp/PlayerSlice";
+import { Player, resetPlayerState } from "../features/slices/PlayerSlice";
 import { useDispatch } from "react-redux";
-import { resetQuestionState } from "../features/slicesTemp/QuestionSlice";
+import { resetQuestionState } from "../features/slices/QuestionSlice";
 function WinnerModal() {
   const { players } = useSelector((state: RootState) => state.playerReducer);
   const [winner, setWinner] = useState<Player | null>(null);

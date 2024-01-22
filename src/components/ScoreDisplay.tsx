@@ -1,4 +1,4 @@
-import { Player } from "../features/slicesTemp/PlayerSlice";
+import { Player } from "../features/slices/PlayerSlice";
 import ScoreItem from "./ScoreItem";
 
 type props = {

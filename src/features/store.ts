@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import questionReducer from "./slicesTemp/QuestionSlice";
-import playerReducer from "./slicesTemp/PlayerSlice";
-import appReducer from "./slicesTemp/AppState";
+import questionReducer from "./slices/QuestionSlice";
+import playerReducer from "./slices/PlayerSlice";
+import appReducer from "./slices/AppState";
 const reducers = combineReducers({
   questionReducer,
   playerReducer,

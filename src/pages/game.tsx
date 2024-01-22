@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import ScoreDisplay from "../components/ScoreDisplay";
 import Wheel from "../components/Wheel";
-import { getQuestions } from "../features/slicesTemp/QuestionSlice";
+import { getQuestions } from "../features/slices/QuestionSlice";
 import { RootState } from "../features/store";
 
 function Game() {

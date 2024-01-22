@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { setGameStopped } from "../features/slicesTemp/AppState";
-import { addScore, advanceGame } from "../features/slicesTemp/PlayerSlice";
-import { addUsed } from "../features/slicesTemp/QuestionSlice";
+import { setGameStopped } from "../features/slices/AppState";
+import { addScore, advanceGame } from "../features/slices/PlayerSlice";
+import { addUsed } from "../features/slices/QuestionSlice";
 import { RootState } from "../features/store";
 import { Category } from "../utils/Interfaces";
 
