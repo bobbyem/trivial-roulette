@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: 14
 
+      - name: Debug File Permissions
+        run: |
+          ls -la 
+          ls -la build
+
       - name: Install dependencies
         run: npm install
 
