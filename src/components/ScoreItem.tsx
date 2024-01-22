@@ -1,4 +1,4 @@
-import { Player } from "../features/slices/PlayerSlice";
+import { Player } from "../features/slicesTemp/PlayerSlice";
 import { Category } from "../utils/Interfaces";
 
 function ScoreItem(props: { player: Player }) {

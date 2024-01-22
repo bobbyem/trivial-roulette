@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { deletePlayer } from "../features/slices/PlayerSlice";
+import { deletePlayer } from "../features/slicesTemp/PlayerSlice";
 
 type props = {
   index: number;

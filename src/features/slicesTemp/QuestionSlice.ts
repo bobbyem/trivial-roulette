@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Category } from "../../utils/Interfaces";
-import questionsService from "../services/QuestionsService";
+import questionsService from "../servicesTemp/QuestionsService";
 
 //Types and Interfaces
 export interface Question {

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import PlayerItem from "../components/PlayerItem";
-import { addPlayer } from "../features/slices/PlayerSlice";
+import { addPlayer } from "../features/slicesTemp/PlayerSlice";
 import { RootState } from "../features/store";
 
 function Players() {
