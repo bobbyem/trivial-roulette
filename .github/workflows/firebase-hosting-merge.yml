@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          REACT_APP_API_URL=${{ env.REACT_APP_API_URL }}
-          npm ci && npm run build
+          npm install
+          REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }} npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
