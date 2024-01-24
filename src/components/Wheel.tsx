@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setGameRunning } from "../features/slices/AppState";
-import { Category } from "../utils/Interfaces";
 
 function Wheel() {
   const { currentPlayer, players } = useSelector(
@@ -23,6 +22,7 @@ function Wheel() {
     if (gameRunning && currentQuestion) {
       navigate("/question");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gameRunning, currentQuestion]);
 
   function startGame(): void {

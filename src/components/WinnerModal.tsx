@@ -19,6 +19,7 @@ function WinnerModal() {
     if (!result && winner) {
       setWinner(null);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [players, winner]);
 
   if (winner) {

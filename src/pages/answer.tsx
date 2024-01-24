@@ -23,6 +23,7 @@ function Answer() {
     if (!currentQuestion || !gameRunning) {
       navigate("/game");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentQuestion]);
 
   function handleResult(correct: boolean): void {

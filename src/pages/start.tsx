@@ -5,12 +5,17 @@ function Start() {
 
   return (
     <div className="page align-items-center justify-content-center fade-in">
-      <h1>Welcome!</h1>
+      <h1>Trivial Roulette</h1>
+      <img
+        src="logo512.png"
+        alt="Logo Wheel"
+        className="w-200 spin-periodical"
+      />
       <div className="w-300">
         <p className="text-center">
-          Trivial Roulette is trivia game for web developers. Think of it as a
-          new "spin" on the traditional TP boardgame. All the questions
-          "revolve" around the terms, technology and history of web development.
+          A trivia game for web developers. Think of it as a new "spin" on the
+          traditional TP boardgame. All the questions "revolve" around the
+          terms, technology and history of web development.
           <br />
           The questions have been submitted by generous people of the developer
           community.

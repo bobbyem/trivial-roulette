@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { RootState } from "../features/store";
-import { Category } from "../utils/Interfaces";
 
 function Question() {
   const { currentQuestion } = useSelector(
@@ -15,6 +14,7 @@ function Question() {
     if (!currentQuestion || !gameRunning) {
       navigate("/game");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentQuestion]);
 
   if (currentQuestion) {

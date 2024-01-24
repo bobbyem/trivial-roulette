@@ -21,6 +21,7 @@ function Game() {
     if (players.length < 1) {
       navigate("/players");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [players]);
 
   if (players.length > 0) {
